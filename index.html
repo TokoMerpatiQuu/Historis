@@ -175,8 +175,8 @@
             <h1>Toko MerpatiQuu</h1>
         </header>
         <main>    <div class="menu">
-        <div class="hutang-group">
-            <a>HUTANG</a>
+        <a href="javascript:void(0);" id="hutang-link">HUTANG</a>
+        <div id="hutang-dropdown" style="display: none;">
             <a href="historis.html">TOKO</a>
             <a href="saless.html">KIRIMAN</a>
         </div>
@@ -189,5 +189,9 @@
         </main>
         <div class="background-animation"></div>
     </div>
+    <script>document.getElementById('hutang-link').addEventListener('click', function() {
+        var dropdown = document.getElementById('hutang-dropdown');
+        dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+    });</script>
 </body>
 </html>
